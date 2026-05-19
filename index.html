@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Clock</title>
+ 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+ 
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+  <div class="app">
+ 
+    <!-- Header -->
+    <header class="hdr">
+      <div class="hdr-tag">🌐 World Clock</div>
+      <h1>Every Timezone.<br>One Place.</h1>
+      <p>Real-time clocks for cities across the globe</p>
+    </header>
+ 
+    <!-- UTC Bar -->
+    <div class="utc">
+      <div class="utc-dot"></div>
+      <span class="utc-lbl">UTC</span>
+      <span class="utc-time" id="utcT">--:--:--</span>
+      <span class="utc-date" id="utcD">---</span>
+    </div>
+ 
+    <!-- Search -->
+    <div class="srch-wrap">
+      <span class="srch-ico">⌕</span>
+      <input class="srch" id="srch" type="text"
+             placeholder="Search a city or country to add…" autocomplete="off"/>
+      <button class="clr" id="clrBtn" type="button">✕</button>
+      <div class="drop" id="drop"></div>
+    </div>
+ 
+    <!-- Clock Grid -->
+    <div class="grid" id="grid"></div>
+ 
+  </div>
+ 
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
